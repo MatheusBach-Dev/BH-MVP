@@ -10,13 +10,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
 
           {/* Brand */}
-          <div>
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-green-500 flex items-center justify-center font-bold text-black text-lg">
-                BH
-              </div>
-              <span className="font-bold text-white text-base">BH Celulares</span>
-            </div>
+          <div className="flex flex-col items-start">
+            <a href="#hero" className="flex flex-col items-start group mb-4">
+              <img
+                src="/src/assets/logo.PNG"
+                alt="BH Celulares"
+                className="h-12 w-auto"
+              />
+              <span className="text-gray-500 text-[10px] font-medium tracking-wide leading-none mt-1">
+                Relógios · Celulares · Presentes
+              </span>
+            </a>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
               Especialistas em iPhone e Xiaomi em Belo Horizonte.
             </p>
@@ -35,7 +39,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg glass-card flex items-center justify-center text-gray-400 hover:text-green-400 hover:border-green-500/30 transition-all"
               >
-                <MessageCircle size={16} />
+                <img src="/src/assets/whatsapp.png" alt="WhatsApp" className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -68,7 +72,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2.5 text-gray-400 hover:text-green-400 text-sm transition-colors"
                 >
-                  <MessageCircle size={15} className="text-green-500 shrink-0" />
+                  <img src="/src/assets/whatsapp.png" alt="WhatsApp" className="w-4 h-4 shrink-0" />
                   {PHONE_DISPLAY}
                 </a>
               </li>

@@ -42,7 +42,6 @@ export function CtaSection() {
             size="lg"
             className="mb-10"
           >
-            <MessageCircle size={20} />
             Falar com a equipe agora
           </Button>
 

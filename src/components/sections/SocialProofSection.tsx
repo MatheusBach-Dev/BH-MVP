@@ -7,7 +7,7 @@ import { SectionHeader } from '../ui/SectionHeader'
 
 export function SocialProofSection() {
   return (
-    <SectionWrapper id="clientes" dark>
+    <SectionWrapper id="clientes" dark glow="left">
       <SectionHeader
         badge="Clientes reais"
         title="A emoção de quem já recebeu"
@@ -59,7 +59,7 @@ export function SocialProofSection() {
         {[
           { value: '6+',   label: 'Anos de mercado' },
           { value: '11k+', label: 'Seguidores no Instagram' },
-          { value: '500+', label: 'Clientes atendidos' },
+          { value: '100+', label: 'Clientes atendidos' },
           { value: '5.0',  label: 'Avaliação média' },
         ].map((stat, i) => (
           <motion.div

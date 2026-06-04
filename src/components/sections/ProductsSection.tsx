@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { MessageCircle, Tag } from 'lucide-react'
+import { MessageCircle, Tag, BookOpen } from 'lucide-react'
 import { PRODUCTS } from '../../data'
 import { formatCurrency, calcInstallment, buildProductWhatsAppUrl } from '../../utils'
 import { SectionWrapper } from '../ui/SectionWrapper'
@@ -82,7 +82,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
   )
 }
 
-export function ProductsSection() {
+export function ProductsSection({ onCatalog }: { onCatalog: () => void }) {
   const [filter, setFilter] = useState<FilterBrand>('Todos')
   const filters: FilterBrand[] = ['Todos', 'Apple', 'Xiaomi', 'Relogios']
 
@@ -91,7 +91,7 @@ export function ProductsSection() {
     : PRODUCTS.filter((p) => p.brand === filter)
 
   return (
-    <SectionWrapper id="produtos">
+    <SectionWrapper id="produtos" glow="right">
       <SectionHeader
         badge="Estoque disponível"
         title="Produtos em destaque"
@@ -123,8 +123,8 @@ export function ProductsSection() {
       </div>
 
       {/* Bottom CTA */}
-      <div className="text-center mt-12">
-        <p className="text-gray-500 text-sm mb-4">
+      <div className="text-center mt-12 flex flex-col items-center gap-4">
+        <p className="text-gray-500 text-sm">
           Não encontrou o modelo que procura?
         </p>
         <Button
@@ -133,9 +133,16 @@ export function ProductsSection() {
           variant="secondary"
           size="md"
         >
-          <MessageCircle size={16} />
+          
           Consultar disponibilidade
         </Button>
+        <button
+          onClick={onCatalog}
+          className="flex items-center gap-2 text-gray-500 hover:text-green-400 text-sm font-medium transition-colors group"
+        >
+          <BookOpen size={14} className="group-hover:scale-110 transition-transform" />
+          Ver catálogo completo
+        </button>
       </div>
     </SectionWrapper>
   )

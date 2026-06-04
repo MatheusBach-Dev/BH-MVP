@@ -11,13 +11,13 @@ export default {
           700: '#007E33',
         },
         dark: {
-          50:  '#2A2A2A',
-          100: '#1E1E1E',
-          200: '#181818',
-          300: '#141414',
-          400: '#111111',
-          500: '#0D0D0D',
-          600: '#0A0A0A',
+          50:  '#3A3A3A',
+          100: '#2A2A2A',
+          200: '#222222',
+          300: '#1C1C1C',
+          400: '#181A1F',
+          500: '#131619',
+          600: '#111318',
         },
       },
       fontFamily: {
@@ -26,7 +26,10 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-glow': 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0,200,83,0.15), transparent)',
+        'hero-glow':         'radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0,200,83,0.22), transparent)',
+        'glow-left':          'radial-gradient(ellipse 60% 50% at 0% 50%, rgba(0,200,83,0.08), transparent)',
+        'glow-right':         'radial-gradient(ellipse 60% 50% at 100% 50%, rgba(0,200,83,0.08), transparent)',
+        'glow-center':        'radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,200,83,0.07), transparent)',
       },
       animation: {
         'fade-up': 'fadeUp 0.6s ease forwards',

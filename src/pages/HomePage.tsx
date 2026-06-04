@@ -1,18 +1,22 @@
 import React from 'react'
-import { HeroSection }         from '../components/sections/HeroSection'
+import { HeroSection }          from '../components/sections/HeroSection'
 import { DifferentialsSection } from '../components/sections/DifferentialsSection'
 import { ProductsSection }      from '../components/sections/ProductsSection'
 import { SocialProofSection }   from '../components/sections/SocialProofSection'
 import { TestimonialsSection }  from '../components/sections/TestimonialsSection'
-import { FaqSection }           from '../components/sections/FaqSection'
 import { CtaSection }           from '../components/sections/CtaSection'
+import { FaqSection }           from '../components/sections/FaqSection'
 
-export function HomePage() {
+interface HomePageProps {
+  onCatalog: () => void
+}
+
+export function HomePage({ onCatalog }: HomePageProps) {
   return (
     <main>
-      <HeroSection />
+      <HeroSection onCatalog={onCatalog} />
       <DifferentialsSection />
-      <ProductsSection />
+      <ProductsSection onCatalog={onCatalog} />
       <SocialProofSection />
       <TestimonialsSection />
       <CtaSection />

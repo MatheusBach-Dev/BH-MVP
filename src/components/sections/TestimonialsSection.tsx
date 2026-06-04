@@ -17,7 +17,7 @@ function StarRow({ count = 5 }: { count?: number }) {
 
 export function TestimonialsSection() {
   return (
-    <SectionWrapper id="depoimentos">
+    <SectionWrapper id="depoimentos" glow="right">
       <SectionHeader
         badge="Avaliações"
         title="O que nossos clientes dizem"
