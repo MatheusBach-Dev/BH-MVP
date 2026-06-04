@@ -98,13 +98,12 @@ export function HeroSection({ onCatalog }: { onCatalog: () => void }) {
             animate="show"
             className="hidden lg:flex items-center justify-center"
           >
-            <div className="relative w-full max-w-[480px] aspect-[4/5]">
-              {/* Center content — placeholder for user's image */}
-              <div className="absolute inset-0 rounded-3xl flex items-center justify-center">
-                <div className="w-16 h-16 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center justify-center">
-                  <span className="text-3xl">📱</span>
-                </div>
-              </div>
+            <div className="relative w-full max-w-[820px] -mt-20">
+              <img
+                src="/src/assets/heroimage.png"
+                alt="Hero"
+                className="w-full h-auto object-contain"
+              />
             </div>
           </motion.div>
 

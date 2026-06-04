@@ -72,7 +72,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2.5 text-gray-400 hover:text-green-400 text-sm transition-colors"
                 >
-                  <img src="/src/assets/whatsapp.png" alt="WhatsApp" className="w-4 h-4 shrink-0" />
+                <img src="/src/assets/whatsapp.png" alt="WhatsApp" className="w-4 h-4 shrink-0 brightness-0 saturate-100 invert" style={{ filter: 'invert(58%) sepia(69%) saturate(500%) hue-rotate(103deg) brightness(95%) contrast(101%)' }} />
                   {PHONE_DISPLAY}
                 </a>
               </li>

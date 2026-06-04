@@ -8,7 +8,7 @@ import { SectionHeader } from '../ui/SectionHeader'
 import { Button } from '../ui/Button'
 import type { Product } from '../../types'
 
-type FilterBrand = 'Todos' | 'Apple' | 'Xiaomi' | 'Relogios'
+type FilterBrand = 'Apple' | 'Xiaomi' | 'Relogios'
 
 function ProductCard({ product, index }: { product: Product; index: number }) {
   return (
@@ -83,10 +83,10 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
 }
 
 export function ProductsSection({ onCatalog }: { onCatalog: () => void }) {
-  const [filter, setFilter] = useState<FilterBrand>('Todos')
-  const filters: FilterBrand[] = ['Todos', 'Apple', 'Xiaomi', 'Relogios']
+  const [filter, setFilter] = useState<FilterBrand>('Apple')
+  const filters: FilterBrand[] = ['Apple', 'Xiaomi', 'Relogios']
 
-  const filtered = filter === 'Todos'
+  const filtered = filter === 'Apple'
     ? PRODUCTS
     : PRODUCTS.filter((p) => p.brand === filter)
 
