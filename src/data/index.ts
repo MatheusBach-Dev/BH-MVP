@@ -280,5 +280,5 @@ export const DIFFERENTIALS: Differential[] = [
 export const WHATSAPP_NUMBER = '5531996621767'
 export const WHATSAPP_MESSAGE = 'Olá! Vim pelo site e quero saber mais sobre os celulares disponíveis.'
 export const INSTAGRAM_URL = 'https://instagram.com/bhrelogiosepresentes'
-export const EMAIL = 'atende.bhpresentes.@gmail.com'
+export const EMAIL = 'atende.bhpresentes.lucas@gmail.com'
 export const PHONE_DISPLAY = '(31) 9.9662-1767'
